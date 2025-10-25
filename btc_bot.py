@@ -50,7 +50,7 @@ last_trend = None
 
 while True:
     try:
-        time.sleep(30)
+        time.sleep(10)
 
         # ✅ Fetch live values
         reachable = driver.find_element(By.ID, "reachable-nodes").text
@@ -128,7 +128,7 @@ while True:
         send_to_telegram(error_alert)
 
         # Wait a bit before retrying
-        time.sleep(60)
+        time.sleep(10)
 
 # ✅ Cleanup
 driver.quit()
